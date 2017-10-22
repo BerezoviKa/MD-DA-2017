@@ -1,0 +1,53 @@
+---
+title: "R-intro1_classwork"
+author: "Berezovik Ekaterina, RI-440005"
+date: '28 сентября 2017 г '
+output: html_document
+---
+
+**Введение в R. Самостоятельная работа**
+
+- Посчитать 
+```{r}
+34+777 
+13*47 
+675*15 
+849*629 
+```
+
+- Умножение числа
+``` {r}
+11111111*11111111
+```
+
+``` {}
+11111111*1111111?
+```
+
+*Ошибка заключается в том, что форматы не совпадает* 
+
+
+- Нахождение площади прямоугольника с длинами S1, ширинами S2
+- Построение графика
+
+```{r fig.width=4, fig.height=3,message=FALSE}
+S1 <- c(3, 7, 12, 15, 20)
+S2 <- c(2, 5, 8, 11, 15)
+S1*S2
+plot (S1, S2)
+lines (S1, S2)
+```
+
+- Построение графика по заданию
+
+```{r fig.width=4, fig.height=3,message=FALSE}
+learn <-c("Maths" = 40, "English"= 40,"PE" = 10, "Programming" = 150)
+barplot(learn, xlab="Subject", ylab="Time, sec", col="blue")
+```
+
+- Расчет вероятности перелива банки
+
+```{r}
+drinks <-rnorm(10000, mean = 450, sd = 4)
+mean(drinks > 455)
+```
